@@ -29,3 +29,5 @@ jobs:
       run: cargo clippy -- -D warnings
     - name: Run formatting (fmt)
       run: cargo fmt -- --check
+    - name: Run audit check
+      uses: actions-rs/audit-check@v1.2.0
